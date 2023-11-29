@@ -1,0 +1,9 @@
+--to create a table from a csv file in duckdb
+CREATE TABLE name as SELECT * FROM read_csv_auto(filepath);
+  -- fir the first dataset 
+create table fifa21_1 as
+select * from read_csv_auto('"C:\Users\CHICHI\Desktop\Fifa\fifa21_raw_data.csv", sample_size=-1)
+
+
+create table fifa21_2 as
+select * from read_csv_auto('"C:\Users\CHICHI\Desktop\Fifa\fifa21 raw data v2.csv", sample_size=-1)
